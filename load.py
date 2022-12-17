@@ -6,7 +6,7 @@ class WebsiteUser(HttpUser):
 
     def on_start(self):
         response=self.client.post("/user/auth/v2/send-otp", {
-            "mobile": "9999642347"
+            "mobile": "7014090407"
         })
         json_var = response.json()
         request_id = json_var['statusCode']
@@ -17,7 +17,7 @@ class WebsiteUser(HttpUser):
     @task
     def index(self):
         response=self.client.post("/user/auth/v2/send-otp", {
-            "mobile": "9999642347"
+            "mobile": "7014090407"
         })
         json_var = response.json()
         request_id = json_var['statusCode']
