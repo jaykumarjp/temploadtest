@@ -9,10 +9,16 @@ class WebsiteUser(HttpUser):
             "mobile": "9999642347"
         })
         json_var = response.json()
-        request_id = str(json_var)
+        request_id = json_var['title']
 
-        print('Post title is ' + request_id)
+        print(request_id)
 
     @task
     def index(self):
-        self.client.get("/")
+        response=self.client.post("/user/auth/v2/send-otp", {
+            "mobile": "9999642347"
+        })
+        json_var = response.json()
+        request_id = json_var['title']
+
+        print(request_id)
