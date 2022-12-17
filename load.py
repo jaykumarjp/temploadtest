@@ -9,7 +9,7 @@ class WebsiteUser(HttpUser):
             "ccode": "+91"
         })
 
-        print(str(response))
+        print(response)
         
 
     @task
@@ -18,5 +18,5 @@ class WebsiteUser(HttpUser):
             "mobile": "7014090407",
             "ccode": "+91"
         })
-        print(str(response))
+        print(response)
         
