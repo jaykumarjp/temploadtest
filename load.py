@@ -12,8 +12,3 @@ class WebsiteUser(HttpUser):
     @task
     def index(self):
         self.client.get("/")
-        self.client.get("/static/assets.js")
-
-    @task
-    def about(self):
-        self.client.get("/about/")
