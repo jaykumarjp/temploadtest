@@ -1,6 +1,5 @@
 from locust import HttpUser, between, task
 
-i=0
 class WebsiteUser(HttpUser):
     wait_time = between(0.05, 0.1)
 
