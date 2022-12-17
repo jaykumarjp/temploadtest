@@ -12,7 +12,7 @@ class WebsiteUser(HttpUser):
         request_id = json_var['statusCode']
 
         print(str(i)+"---"+request_id)
-        i=i+1
+        
 
     @task
     def index(self):
@@ -23,4 +23,3 @@ class WebsiteUser(HttpUser):
         request_id = json_var['statusCode']
 
         print(str(i)+"---"+request_id)
-        i=i+1
