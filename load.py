@@ -8,8 +8,9 @@ class WebsiteUser(HttpUser):
             "mobile": "7014090407",
             "ccode": "+91"
         })
+        json_var = response.json()
 
-        print(response)
+        print(str(json_var))
         
 
     @task
@@ -18,5 +19,8 @@ class WebsiteUser(HttpUser):
             "mobile": "7014090407",
             "ccode": "+91"
         })
-        print(response)
+        
+        json_var = response.json()
+
+        print(str(json_var))
         
