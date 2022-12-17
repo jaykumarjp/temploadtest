@@ -1,6 +1,6 @@
 from locust import HttpUser, between, task
 
-class Test_1(1):
+class Test_1(1,2):
 
     @task(1)
     def users(self):
