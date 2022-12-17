@@ -2,6 +2,7 @@ from locust import HttpUser, between, task
 
 
 class WebsiteUser(HttpUser):
+    i=0
     wait_time = between(0.05, 0.1)
 
     def on_start(self):
@@ -11,7 +12,8 @@ class WebsiteUser(HttpUser):
         json_var = response.json()
         request_id = json_var['statusCode']
 
-        print(request_id)
+        print(str(i)+"---"+request_id)
+        i=i+1
 
     @task
     def index(self):
@@ -21,4 +23,5 @@ class WebsiteUser(HttpUser):
         json_var = response.json()
         request_id = json_var['statusCode']
 
-        print(request_id)
+        print(str(i)+"---"+request_id)
+        i=i+1
