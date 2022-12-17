@@ -9,7 +9,7 @@ class WebsiteUser(HttpUser):
             "mobile": "9999642347"
         })
         json_var = response.json()
-        request_id = json_var
+        request_id = str(json_var)
 
         print('Post title is ' + request_id)
 
