@@ -10,4 +10,4 @@ class Test_1(TaskSet):
         json_var = response.json()
         request_id = json_var['title']
 
-        print 'Post title is ' + request_id
+        print('Post title is ' + request_id)
