@@ -11,7 +11,7 @@ class WebsiteUser(HttpUser):
         json_var = response.json()
         request_id = json_var['statusCode']
 
-        print(str(i)+"---"+request_id)
+        print(request_id)
         
 
     @task
@@ -22,4 +22,4 @@ class WebsiteUser(HttpUser):
         json_var = response.json()
         request_id = json_var['statusCode']
 
-        print(str(i)+"---"+request_id)
+        print(request_id)
