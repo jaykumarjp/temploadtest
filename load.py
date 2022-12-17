@@ -8,8 +8,6 @@ class WebsiteUser(HttpUser):
             "mobile": "7014090407",
             "ccode": "+91"
         })
-        #json_var = response.json()
-        #request_id = json_var['statusCode']
 
         print(str(response))
         
@@ -20,8 +18,5 @@ class WebsiteUser(HttpUser):
             "mobile": "7014090407",
             "ccode": "+91"
         })
-        #json_var = response.json()
-        #request_id = json_var['statusCode']
-
         print(str(response))
         
