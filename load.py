@@ -5,15 +5,9 @@ class WebsiteUser(HttpUser):
     wait_time = between(5, 15)
 
     def on_start(self):
-        self.client.post("/login", {
-            "username": "test_user",
-            "password": ""
+        self.client.post("/user/auth/v2/send-otp", {
+            "mobile": "9999642347"
         })
-
-    @task
-    def index(self):
-        self.client.get("/")
-        self.client.get("/static/assets.js")
 
     @task
     def about(self):
