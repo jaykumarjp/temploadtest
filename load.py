@@ -7,10 +7,10 @@ class WebsiteUser(HttpUser):
         response=self.client.post("/user/auth/v2/send-otp", {
             "mobile": "7014090407"
         })
-        json_var = response.json()
-        request_id = json_var['statusCode']
+        #json_var = response.json()
+        #request_id = json_var['statusCode']
 
-        print(request_id)
+        print(str(response))
         
 
     @task
@@ -18,7 +18,8 @@ class WebsiteUser(HttpUser):
         response=self.client.post("/user/auth/v2/send-otp", {
             "mobile": "7014090407"
         })
-        json_var = response.json()
-        request_id = json_var['statusCode']
+        #json_var = response.json()
+        #request_id = json_var['statusCode']
 
-        print(request_id)
+        print(str(response))
+        
