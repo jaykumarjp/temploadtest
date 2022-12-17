@@ -9,7 +9,7 @@ class WebsiteUser(HttpUser):
             "mobile": "9999642347"
         })
         json_var = response.json()
-        request_id = json_var['title']
+        request_id = json_var['statusCode']
 
         print(request_id)
 
@@ -19,6 +19,6 @@ class WebsiteUser(HttpUser):
             "mobile": "9999642347"
         })
         json_var = response.json()
-        request_id = json_var['title']
+        request_id = json_var['statusCode']
 
         print(request_id)
