@@ -7,7 +7,8 @@ class WebsiteUser(HttpUser):
     def index(self):
         response=self.client.post("/user/auth/v2/send-otp", {
             "mobile": "7014090407",
-            "ccode": "+91"
+            "ccode": "+91",
+            "loadtest":"allowlocust"
         })
         
         #json_var = response.json()
